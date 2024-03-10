@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreQuest</title>
+    <link rel="stylesheet" href="../Package1/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-xxl-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fw-bold" href="#"
+            ><span class="text-danger">AK</span>Travelbliss</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDark"
+            aria-controls="navbarDark"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-xxl-0 fs-5 ms-auto p-2 text-center"
+            >
+              <li class="nav-item me-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Hotels">Hotels</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Gallary">Gallary</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Blog">Blogs</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Googlemap">gmap</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#rev">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="package1">
+        <div class="slide">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../images/95.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../images/96.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../images/97.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p>
+            Discover the wonders of Dubai, where modernity meets tradition.
+            Marvel at the world's tallest building, shop in luxurious malls,
+            explore historic souks, and experience Arabian hospitality in this
+            vibrant city.
+          </p>
+          <div class="price">
+            <h2>Only For Rs.15,999/-</h2>
+            <h1>20% OFF</h1>
+          </div>
+          <a href="#" class="btn btn-primary" id="booknow4" onclick="validate()"
+            >Book Now</a
+          >
+        </div>
+
+        <div class="head">
+          <a href="#"><span class="text-danger">Arab Emirates- </span>Dubai</a>
+          <div class="about-prod">
+            <h4>About this destination</h4>
+          </div>
+          <div class="about-desc">
+            <table>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Whether you're in Downtown Dubai around the Burj Khalifa,
+                    the tallest man-made structure on earth, or down at the
+                    marina, home to four of the five tallest residential
+                    buildings in the world, you're never too far away from an
+                    amazing view.At
+                    nearly twice the height of New York's Empire State building,
+                    the tallest free-standing structure in the world towers
+                    above the clouds.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    The Dubai Mall is the second biggest shopping centre on the
+                    planet by land mass, and it's just one of the many novelty
+                    centres you can visit. People travel to Dubai from near and
+                    far to indulge in retail therapy and visit the attractions
+                    built into the various shopping centres. Dubai even holds a
+                    month-long shopping festival in January with concerts and
+                    giveaways where shoppers can win cars and gold.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Dubai is a city where anything is possible - even skiing in
+                    the snow. With such a diverse
+                    and international population, there is a spectacular range
+                    of food styles available in the city.
+                    Throw in the array of food festivals that happen throughout
+                    the year and the stream of pop-up eateries and it's no
+                    wonder expats talk about newcomers putting on weight, aka
+                    the 'Dubai stone'.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    The Palm Fountain is a really fun sight for anyone but, of
+                    course, the kids in particular love witnessing the magic!
+                    Designed to show the harmony between the universe and earth,
+                    the fountain puts on a colourful display where the water
+                    dances, leaps and shoots high into the sky in time with a
+                    soundtrack of music.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    With almost 200 different nationalities calling the United
+                    Arab Emirates city home, and a massive 90% of the
+                    population coming from outside the country, Dubai is
+                    arguably one of the most cosmopolitan cities in the world.
+                    In contrast to cities like New York or London that have been
+                    inhabited for hundreds of years, Dubai's expats are mainly
+                    first-generation, bringing with them a host of different
+                    cultural traditions, food and experiences. The diversity on
+                    show in the city is unparalleled.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="Hotels" class="heading">
+        <a href="#"><span class="text-danger">Exclusive-</span> Hotels</a>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <img src="../images/98.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Atana Hotel</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Hessa Street,Al Barsha
+              South,Dubai
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.25,999/-</h2>
+              <h1>20% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="booknow"
+              onclick="validate()"
+              >Book Now</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/99.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Millennium Hotel</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Casablanca Street,Al
+              Garhoud,Dubai
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.23,999/-</h2>
+              <h1>15% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="booknow1"
+              onclick="validate()"
+              >Book Now</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/100.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Wyndham Marina</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Seba Street,Dubai
+              Marina,Dubai
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.14,999/-</h2>
+              <h1>40% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="booknow2"
+              onclick="validate()"
+              >Book Now</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/101.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Flora Inn Hotel</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Airport Road,Garhoud,Dubai
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.17,999/-</h2>
+              <h1>30% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="booknow3"
+              onclick="validate()"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="Gallary" class="heading">
+        <a href="#"><span class="text-danger">Amezing-</span> Gallary</a>
+      </div>
+      <div class="collecton">
+        <div class="row1">
+          <img src="../images/102.jpg" alt="" srcset="" />
+          <img src="../images/103.jpg" alt="" srcset="" />
+          <img src="../images/104.jpg" alt="" srcset="" />
+          <img src="../images/105.jpg" alt="" srcset="" />
+        </div>
+        <div class="row2">
+          <img src="../images/106.jpg" alt="" srcset="" />
+          <img src="../images/107.jpg" alt="" srcset="" />
+          <img src="../images/108.jpg" alt="" srcset="" />
+          <img src="../images/109.jpg" alt="" srcset="" />
+        </div>
+      </div>
+
+      <div id="Blog" class="heading">
+        <a href="#"><span class="text-danger">Travel-</span>Blog</a>
+      </div>
+      <div class="blog">
+        <div class="blog1">
+          <div class="user-details">
+            <div class="user-photo">
+              <img src="../images/32.jpg" alt="" srcset="" />
+            </div>
+            <div class="user-info">
+              <div class="user-name">Dhruv Rathi</div>
+              <button class="follow-button">Follow</button>
+              <div class="date">14 Sep 2023</div>
+            </div>
+          </div>
+          <p>
+            Dubai, a city of dreams in the heart of the United Arab Emirates, is
+            a place where the modern meets the traditional, and the futuristic
+            skyline is juxtaposed against the vast desert landscape. My recent
+            visit to Dubai was a journey of discovery, as I explored its diverse
+            attractions and experienced its unique blend of culture and luxury.
+            One of the first things that struck me about Dubai was its stunning
+            skyline, dominated by the iconic Burj Khalifa, the tallest building
+            in the world. As I stood at the base of this architectural marvel, I
+            was awestruck by its sheer height and elegance. Another highlight of
+            my trip was visiting the Dubai Mall, one of the largest shopping
+            malls in the world. Here, I indulged in some retail therapy,
+            browsing through a wide array of shops offering everything from
+            high-end fashion to local handicrafts. No visit to Dubai is complete
+            without experiencing its rich culture and heritage. I visited the
+            Dubai Museum, located in the Al Fahidi Fort, which offers a
+            fascinating glimpse into Dubai's history and evolution from a small
+            fishing village to a global metropolis.
+          </p>
+        </div>
+        <div class="blog2">
+          <div class="user-details">
+            <div class="user-photo">
+              <img src="../images/33.jpg" alt="" srcset="" />
+            </div>
+            <div class="user-info">
+              <div class="user-name">Isha Sharma</div>
+              <button class="follow-button">Follow</button>
+              <div class="date">14 Sep 2023</div>
+            </div>
+          </div>
+          <p>
+            One of the highlights of my trip was visiting the Dubai Marina, a
+            stunning waterfront development lined with skyscrapers, restaurants,
+            and cafes. I took a leisurely stroll along the marina promenade,
+            soaking in the views of the yachts and the bustling city skyline. I
+            also visited the historic district of Al Fahidi, where I explored
+            the narrow lanes and traditional wind-tower houses. The Al Fahidi
+            Fort, home to the Dubai Museum, offered a fascinating glimpse into
+            Dubai's history and culture. No visit to Dubai is complete without
+            experiencing its vibrant souks. I spent hours wandering through the
+            Gold Souk, marveling at the intricate gold jewelry on display, and
+            the Spice Souk, where the aroma of exotic spices filled the air. One
+            of the most memorable experiences of my trip was taking a dhow
+            cruise along the Dubai Creek. As the sun set, I enjoyed a
+            traditional Arabic dinner onboard the dhow, while taking in the
+            stunning views of the city skyline. Dubai's culinary scene is as
+            diverse as its culture, with a wide range of dining options to suit
+            every taste.
+          </p>
+        </div>
+      </div>
+      <div id="Googlemap" class="heading">
+        <a href="#"><span class="text-danger">Google-</span> Map</a>
+      </div>
+      <div class="map">
+        <div class="autobook">
+          <div class="book">
+            <header>
+              <h1>Booking Cab System</h1>
+            </header>
+            <form>
+              <label for="pickup-location">Pickup Location:</label>
+              <input
+                type="text"
+                id="pickup-location"
+                name="pickup-location"
+              /><br /><br />
+              <label for="dropoff-location">Dropoff Location:</label>
+              <input
+                type="text"
+                id="dropoff-location"
+                name="dropoff-location"
+              /><br /><br />
+              <label for="pickup-time">Pickup Time:</label>
+              <input
+                type="datetime-local"
+                id="pickup-time"
+                name="pickup-time"
+              /><br /><br />
+              <button type="submit">Book Cab</button>
+            </form>
+          </div>
+        </div>
+        <div class="gmap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462564.23320775083!2d54.603515140081136!3d25.075340601993457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709991500936!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="rev" class="heading">
+        <a href="#"><span class="text-danger">Visitor-</span>Reviews</a>
+      </div>
+      <div class="review">
+        <div class="review-block">
+          <div class="review-image">
+            <img src="../images/13.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            Dubai, a city of contrasts, boasts futuristic skyscrapers, luxurious
+            shopping malls, and ancient souks, offering a blend of modernity and
+            tradition.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="../images/14.jpeg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            From the towering Burj Khalifa to the enchanting Dubai Fountain,
+            Dubai's iconic landmarks showcase the city's ambition and
+            architectural prowess.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="../images/15.jpeg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            Dubai's desert safaris, thrilling theme parks, and world-class
+            attractions make it a playground for adventure seekers and leisure
+            travelers alike.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="../images/16.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            Dubai's luxury resorts, pristine beaches, and bustling nightlife
+            make it a glamorous destination for those seeking a lavish escape.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="../images/17.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            Whether exploring the historic Al Fahidi neighborhood, skiing in the
+            Mall of the Emirates, or enjoying a desert safari, Dubai offers a
+            wealth of experiences for every traveler.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footercon">
+          <div class="row1">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">about packages</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Payment options</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Locations</h4>
+              <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Engaland</a></li>
+                <li><a href="#">South-koria</a></li>
+                <li><a href="#">America</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Our Sponsers</h4>
+              <div class="sponsers">
+                <a href="#"><img src="../images/9.png" alt="" /></a>
+                <a href="#"><img src="../images/10.png" alt="" /></a>
+                <a href="#"><img src="../images/11.png" alt="" /> </a>
+                <a href="#"><img src="../images/12.png" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin b1"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram b1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter b1"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f b1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../Package1/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

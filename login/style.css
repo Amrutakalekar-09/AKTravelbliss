@@ -1,0 +1,114 @@
+body {
+    background-image: url("../images/log.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+.box{
+    width: 400px;
+    height: 380px;
+    margin: 130px auto;
+    background-color: rgb(40, 37, 44);
+    border-radius: 15px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.form {
+    width: 270px;
+    height: auto;
+    margin: auto 45px;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    background-color: #8e8c90;
+    border-radius: 10px; 
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    background-color: #8e8c90;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+label{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-left: 6px;
+}
+input[type="email"]::placeholder {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+  }
+  input[type="password"]::placeholder {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+  }
+  input[type="sign in"] {
+    background-color: #ee145b;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 0px 0;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 17px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+  }
+  input[type="sign in"]:hover {
+    background-color: rgb(38, 255, 0);
+    color: white;
+  }
+  h3{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: crimson;
+    padding-top: 10px;
+  }
+  a{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(251, 67, 104);
+    padding-top: 10px;
+    text-decoration: none;
+  }
+  .btn{
+    color: white;
+    background-color: rgb(251, 67, 104);
+    padding: 7px;
+    width: 40px;
+    height: 23px;
+    border-radius: 12px;
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 700px) {
+    body {
+      overflow-x: hidden;
+    }
+   .box{
+    margin-top: 400px;
+    width: auto;
+   }
+  }

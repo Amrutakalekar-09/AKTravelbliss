@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreQuest</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-xxl-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fw-bold" href="#"
+            ><span class="text-danger">AK</span>Travelbliss</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDark"
+            aria-controls="navbarDark"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-xxl-0 fs-5 ms-auto p-2 text-center"
+            >
+              <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Hotels">Hotels</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Gallary">Gallary</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Blog">Blogs</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Googlemap">gmap</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#rev">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="package1">
+        <div class="slide">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../images/1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="../images/18.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="../images/19.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p>
+            Experience the spiritual aura of Varanasi, where the ancient city's
+            mystique unfolds along the sacred Ganges River, offering a profound
+            journey into the heart of India's cultural and religious heritage.
+          </p>
+          <div class="price">
+            <h2>Only For Rs.15,999/-</h2>
+            <h1>20% OFF</h1>
+          </div>
+          <a href="#" class="btn btn-primary" id="booknow4" onclick="validate()">Book Now</a>
+        </div>
+
+        <div class="head">
+          <a href="#"><span class="text-danger">Uttar Pradesh- </span>Varanasi</a>
+          <div class="about-prod">
+            <h4>About this destination</h4>
+          </div>
+          <div class="about-desc">
+            <table>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Varanasi, or Benaras, (also known as Kashi) is one of the
+                    oldest living cities in the world. Varanasi`s Prominence in
+                    Hindu mythology is virtually unrevealed. Mark Twain, the
+                    English author and literature, who was enthralled by the
+                    legend and sanctity of Benaras, once wrote : “Benaras is
+                    older than history, older than tradition, older even than
+                    legend and looks twice as old as all of them put together. ”
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    The land of Varanasi (Kashi) has been the ultimate
+                    pilgrimage spot for Hindus for ages. Hindus believe that one
+                    who is graced to die on the land of Varanasi would attain
+                    salvation and freedom from the cycle of birth and re-birth.
+                    Abode of Lord Shiva and Parvati, the origins of Varanasi are
+                    yet unknown. Ganges in Varanasi is believed to have the
+                    power to wash away the sins of mortals.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Arts, Crafts and Architecture of Banaras: You will be amused
+                    to see that Varanasi is a Museum architectural designs. It
+                    presents changing patterns and movements in course of
+                    history. It has a rich and original variety of paintings and
+                    sculptor styles and equally rich treasures of folk art.
+                    During the ages Varanasi has produced master craftsmen and
+                    Varanasi has earned name and fame for its Sarees,
+                    handicrafts, textiles, Toys, ornaments, metal work, clay and
+                    wood work, leaf and fibre crafts. With ancient crafts,
+                    Banaras has not lagged behind in Modern Industries
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Banaras has been famous for its Music both vocal
+                    instrumental, it has its own dance tradition. Add to this a
+                    very rich stock of folk Music and drama (esp. Ramlila), the
+                    tradition Musical soirees, fairs and festival the rich
+                    tradition of Akharas, games and sports.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="../images/arrow.png" /></td>
+                <td>
+                  <p>
+                    Discover the spots around Varanasi, instituions, story of
+                    freedom struggle and the martyrs, history of Kashiraj,
+                    history of Sarnath, history of Bhadohi (Carpet town), of
+                    Mirzapur, of Ghazipur, know about the famous travellers and
+                    tourists, of the `Nijam. And finally having seen the
+                    Panorama of Banaras, its continuity of culture, discover the
+                    identity of Banaras.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="Hotels" class="heading">
+        <a href="#"><span class="text-danger">Exclusive-</span> Hotels</a>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <img src="../images/20.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ramada Plaza</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>The Mall
+              Cantonment,Varanasi,India
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.25,999/-</h2>
+              <h1>20% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a href="#" class="btn btn-primary" id="booknow" onclick="validate()">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/21.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Taj Ganges</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Nadesar
+              Palace,Varanasi,India
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.23,999/-</h2>
+              <h1>15% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a href="#" class="btn btn-primary" id="booknow1" onclick="validate()">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/22.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sugar Stars</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Near Harsh
+              Gas,Varanasi,India
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.14,999/-</h2>
+              <h1>40% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a href="#" class="btn btn-primary" id="booknow2" onclick="validate()">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/23.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Nandini Palace</h5>
+            <h6>
+              <i class="fa-solid fa-location-dot"></i>Cantt Road,Varanasi,India
+            </h6>
+            <h4>Free Cancellation Within 5 Days</h4>
+            <div class="tag">
+              <h class="card-text"><span>&#9989;</span>Cooling</h>
+              <h class="card-text"><span>&#9989;</span>Pet Allow</h>
+              <h class="card-text"><span>&#9989;</span>Room Service</h>
+            </div>
+            <div class="tag1">
+              <h class="card-text"><span>&#9989;</span>Parking</h>
+              <h class="card-text"><span>&#9989;</span>Key Card</h>
+              <h class="card-text"><span>&#9989;</span>Spa&massage</h>
+            </div>
+            <div class="tag2">
+              <h class="card-text"><span>&#9989;</span>Garden</h>
+              <h class="card-text"><span>&#9989;</span>Free WiFi</h>
+              <h class="card-text"><span>&#9989;</span>Food</h>
+            </div>
+            <div class="price">
+              <h2>Rs.17,999/-</h2>
+              <h1>30% OFF</h1>
+            </div>
+            <h3>Per Night</h3>
+            <a href="#" class="btn btn-primary" id="booknow3" onclick="validate()">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="Gallary" class="heading">
+        <a href="#"><span class="text-danger">Amezing-</span> Gallary</a>
+      </div>
+      <div class="collecton">
+        <div class="row1">
+          <img src="../images/24.jpg" alt="" srcset="" />
+          <img src="../images/25.jpg" alt="" srcset="" />
+          <img src="../images/26.jpg" alt="" srcset="" />
+          <img src="../images/27.jpg" alt="" srcset="" />
+        </div>
+        <div class="row2">
+          <img src="../images/28.jpg" alt="" srcset="" />
+          <img src="../images/29.jpg" alt="" srcset="" />
+          <img src="../images/30.jpg" alt="" srcset="" />
+          <img src="../images/31.jpg" alt="" srcset="" />
+        </div>
+      </div>
+      
+      <div id="Blog" class="heading">
+        <a href="#"><span class="text-danger">Travel-</span>Blog</a>
+      </div>
+      <div class="blog">
+        <div class="blog1">
+          <div class="user-details">
+            <div class="user-photo">
+              <img src="../images/32.jpg" alt="" srcset="">
+            </div>
+            <div class="user-info">
+                <div class="user-name">Dhruv Rathi</div>
+                <button class="follow-button">Follow</button>
+                <div class="date">14 Sep 2023</div>
+            </div>
+        </div>
+        <p>Banaras Trip is a popular travel blog that provides comprehensive information about the city of Varanasi, India. Known for its rich cultural heritage, historical landmarks, and spiritual significance, Varanasi is a popular tourist destination and attracts thousands of visitors from all over the world every year.
+        The blog provides in-depth information about the best places to visit in Varanasi, including its famous ghats, temples, and markets. It also covers the local food, cultural events, and festivals, providing a complete guide to the city's vibrant and diverse culture.
+        One of the highlights of Banaras Trip is its collection of stunning photos and videos that capture the essence of Varanasi and its many attractions. These visuals, combined with the informative and well-written content, make Banaras Trip an excellent resource for anyone planning a trip to the city.
+        Whether you are a first-time visitor or a seasoned traveler, Banaras Trip is the ultimate travel guide to the holy city of Varanasi. With its insightful and practical advice, you all be able to make the most of your trip and experience the best that this vibrant city has to offer.</p>
+        </div>
+        <div class="blog2">
+          <div class="user-details">
+            <div class="user-photo">
+              <img src="../images/33.jpg" alt="" srcset="">
+            </div>
+            <div class="user-info">
+                <div class="user-name">Isha Sharma</div>
+                <button class="follow-button">Follow</button>
+                <div class="date">14 Sep 2023</div>
+            </div>
+        </div>
+        <p>Kashi-Varanasi-Banaras — the city older than history has enticed me for many years with all the beautiful pictures of Ghats, the peculiar food it offers, and the mighty Ganga flowing across the city, and tourists from every corner of the world visiting it. When I was four years old, I was mesmerised by the visuals shown in a Telugu movie, Indra.
+
+          As time passed, I was contemplating visiting Varanasi but couldn't execute it because of my apprehension after hearing weird stories about the place. This time around, thanks to the remote work culture embraced by many companies, this idea of working from Varanasi kept hitting me for some time. This November, while I was on an off-site trip to Goa, I booked my tickets to Varanasi so that I couldn't postpone the trip further.
+          
+          Finally, I made it to Varanasi amidst engulfing Omicron fears all over the country and thought to return immediately if things didn't go well as planned. My parents were sceptical about this trip, but I can't step back after booking tickets.
+          
+          I reached Varanasi on the 4th of December evening, and the airport is 30 km away from the city.</p>
+        </div>
+      </div>
+      <div id="Googlemap" class="heading">
+        <a href="#"><span class="text-danger">Google-</span> Map</a>
+      </div>
+      <div class="map">
+        <div class="autobook">
+          <div class="book">
+            <header>
+              <h1>Booking Cab System</h1>
+            </header>
+          <form>
+            <label for="pickup-location">Pickup Location:</label>
+            <input
+              type="text"
+              id="pickup-location"
+              name="pickup-location"
+            /><br /><br />
+            <label for="dropoff-location">Dropoff Location:</label>
+            <input
+              type="text"
+              id="dropoff-location"
+              name="dropoff-location"
+            /><br /><br />
+            <label for="pickup-time">Pickup Time:</label>
+            <input
+              type="datetime-local"
+              id="pickup-time"
+              name="pickup-time"
+            /><br /><br />
+            <button type="submit">Book Cab</button>
+          </form>
+        </div>
+        </div>
+        <div class="gmap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.0979980173!2d82.90870686378503!3d25.320894920254027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709791560144!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="rev" class="heading">
+        <a href="#"><span class="text-danger">Visitor-</span>Reviews</a>
+      </div>
+      <div class="review">
+      <div class="review-block">
+        <div class="review-image">
+          <img src="../images/13.jpg" alt="" srcset="">
+        </div>
+        <div class="review-text">The ghats of Varanasi offer a glimpse into the timeless rituals and traditions of India. It's a place where you can feel the pulse of the country.</div>
+        <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </div>
+    <div class="review-block">
+      <div class="review-image">
+        <img src="../images/14.jpeg" alt="" srcset="">
+      </div>
+      <div class="review-text">Varanasi is a photographer's paradise. Every corner tells a story, and every moment is a picture waiting to be captured.</div>
+      <div class="stars">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+      </div>
+  </div>
+  <div class="review-block">
+    <div class="review-image">
+      <img src="../images/15.jpeg" alt="" srcset="">
+    </div>
+    <div class="review-text">The boat ride on the Ganges during sunrise was breathtaking. Varanasi's spirituality is truly palpable.</div>
+    <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+    </div>
+</div>
+<div class="review-block">
+  <div class="review-image">
+    <img src="../images/16.jpg" alt="" srcset="">
+  </div>
+  <div class="review-text">Visiting Varanasi was a life-changing experience. The spiritual atmosphere and the Ganga Aarti left me mesmerized.</div>
+  <div class="stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+  </div>
+</div>
+<div class="review-block">
+  <div class="review-image">
+    <img src="../images/17.jpg" alt="" srcset="">
+  </div>
+  <div class="review-text">Varanasi is a city of contrasts, where ancient traditions blend with modern life. The ghats and temples are a sight to behold.</div>
+  <div class="stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+  </div>
+</div>
+  </div>
+    
+      <footer class="footer">
+        <div class="footercon">
+          <div class="row1">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">about packages</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Payment options</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Locations</h4>
+              <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Engaland</a></li>
+                <li><a href="#">South-koria</a></li>
+                <li><a href="#">America</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Our Sponsers</h4>
+              <div class="sponsers">
+                <a href="#"><img src="../images/9.png" alt="" /></a>
+                <a href="#"><img src="../images/10.png" alt="" /></a>
+                <a href="#"><img src="../images/11.png" alt="" /> </a>
+                <a href="#"><img src="../images/12.png" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin b1"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram b1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter b1"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f b1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+   
+    <script src="script.js"></script>
+  
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

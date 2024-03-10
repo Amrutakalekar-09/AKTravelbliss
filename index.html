@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreQuest</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="#pakage1.html">
+      <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-xxl-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fw-bold" href="#"
+            ><span class="text-danger">AK</span>Travelbliss</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDark"
+            aria-controls="navbarDark"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-xxl-0 fs-5 ms-auto p-2 text-center"
+            >
+              <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#our-packages">Packages</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#contct-form">Contact us</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#About-us">About US</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="login/index.html">Sign-in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <video
+          src="images/video.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          class="back-video"
+        ></video>
+        <div class="title">
+          <h1>AK TRAVELBLISS</h1>
+          <p>
+            Plan your trip with us and travel around the world with the most
+            affordable packages!
+          </p>
+          <a href="Register/index.html" class="button">Register Now...!</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="text">
+          <h2>We have the best services available for you!</h2>
+        </div>
+        <div class="rowitems">
+          <div class="container-box">
+            <div class="container-image">
+              <img src="images/1a.jpg" alt="Flight Services" />
+            </div>
+            <h4>Flight Services</h4>
+            <p>Arrival and Departure</p>
+          </div>
+
+          <div class="container-box">
+            <div class="container-image">
+              <img src="images/2a.jpg" alt="Food Services" />
+            </div>
+            <h4>Food Services</h4>
+            <p>Catering</p>
+          </div>
+
+          <div class="container-box">
+            <div class="container-image">
+              <img src="images/3a.jpg" alt="Travel Services" />
+            </div>
+            <h4>Travel Services</h4>
+            <p>Pick-up/drop</p>
+          </div>
+
+          <div class="container-box">
+            <div class="container-image">
+              <img src="images/4a.jpg" alt="Hotel Services" />
+            </div>
+            <h4>Hotel Services</h4>
+            <p>Check-in/out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a location..."
+        />
+        <button onclick="search()">Search</button>
+      </div>
+      <div id="search-results"></div>
+
+      <div id="locations">
+        <div class="location" id="Varanasi">Varanasi</div>
+        <div class="location" id="Manali">Manali</div>
+        <div class="location" id="Ahmedabad">Ahmedabad</div>
+        <div class="location" id="Jaipur">Jaipur</div>
+        <div class="location" id="Singapore">Singapore</div>
+        <div class="location" id="Dubai">Dubai</div>
+        <div class="location" id="Maldives">Maldives</div>
+        <div class="location" id="Amsterdam">Amsterdam</div>
+      </div>
+
+      <div id="our-packages" class="heading">
+        <a href="#"><span class="text-danger">Our-</span> Packages</a>
+      </div>
+
+      <div class="box">
+        <div class="card" id="VaranasiCard" style="width: 18rem">
+          <img src="images/1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Uttar Pradesh</div>
+            <h5 class="card-title">Varanasi</h5>
+            <p class="card-text">
+              The heart of Hinduism lies in Varanasi.There are many mysteries in
+              place that you must discover once in your lifetime.
+            </p>
+            <div class="price">
+              <h2>Rs.15,999/-</h2>
+              <h1>20% OFF</h1>
+            </div>
+            <a href="Package1/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="ManaliCard" style="width: 18rem">
+          <img src="images/2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Himachal Pradesh</div>
+            <h5 class="card-title">Manali</h5>
+            <p class="card-text">
+              "End of the habitable world," Manali is a hill station of northern
+              India and is the destination of thousands of tourists.
+            </p>
+            <div class="price">
+              <h2>Rs.25,999/-</h2>
+              <h1>15% OFF</h1>
+            </div>
+            <a href="Package2/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="AhmedabadCard" style="width: 18rem">
+          <img src="images/3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Gujarat</div>
+            <h5 class="card-title">Ahmedabad</h5>
+            <p class="card-text">
+              Gujarat is well-known for its cuisine, traditional clothing, the
+              Rann of Kutch-White Desert, festivals, culture, handicrafts.
+            </p>
+            <div class="price">
+              <h2>Rs.27,999/-</h2>
+              <h1>40% OFF</h1>
+            </div>
+            <a href="package3/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="JaipurCard" style="width: 18rem">
+          <img src="images/4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Rajasthan</div>
+            <h5 class="card-title">Jaipur</h5>
+            <p class="card-text">
+              Jaipur, known as the "Pink City," is a vibrant city that attracts
+              tourists with its rich history, architecture, and colorful
+              culture.
+            </p>
+            <div class="price">
+              <h2>Rs.32,999/-</h2>
+              <h1>30% OFF</h1>
+            </div>
+            <a href="Package4/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="card" id="SingaporeCard" style="width: 18rem">
+          <img src="images/5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Singapore</div>
+            <h5 class="card-title">Sentosa Island</h5>
+            <p class="card-text">
+              Singapore, a bustling island city-state, is a popular tourist
+              destination known for its skyline, culinary scene, vibrant
+              culture.
+            </p>
+            <div class="price">
+              <h2>$1,999/-</h2>
+              <h1>25% OFF</h1>
+            </div>
+            <a href="Package5/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="DubaiCard" style="width: 18rem">
+          <img src="images/6.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Arab Emirates</div>
+            <h5 class="card-title">Dubai</h5>
+            <p class="card-text">
+              Dubai, a city in the United Arab Emirates, is renowned for its
+              futuristic architecture, luxury shopping, and vibrant nightlife.
+            </p>
+            <div class="price">
+              <h2>$5,999/-</h2>
+              <h1>35% OFF</h1>
+            </div>
+            <a href="Package6/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="MaldivesCard" style="width: 18rem">
+          <img src="images/7.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Maldives</div>
+            <h5 class="card-title">Male</h5>
+            <p class="card-text">
+              The Maldives, a tropical paradise in the Indian Ocean, is famous
+              for its white-sand beaches, luxurious overwater bungalows.
+            </p>
+            <div class="price">
+              <h2>$7,999/-</h2>
+              <h1>10% OFF</h1>
+            </div>
+            <a href="Package7/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+        <div class="card" id="AmsterdamCard" style="width: 18rem">
+          <img src="images/8.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="image-overlay">Netherland</div>
+            <h5 class="card-title">Amsterdam</h5>
+            <p class="card-text">
+              Amsterdam is synonymous with vibrant culture, rich history,
+              inclusivness and beutiful canals.
+            </p>
+            <div class="price">
+              <h2>$9,999/-</h2>
+              <h1>20% OFF</h1>
+            </div>
+            <a href="Package8/index.html" class="btn btn-primary"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="rev" class="heading">
+        <a href="#"><span class="text-danger">Visitor-</span>Reviews</a>
+      </div>
+      <div class="review">
+        <div class="review-block">
+          <div class="review-image">
+            <img src="images/13.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            I love this travel website! It's so easy to use and has all the
+            information I need to plan my trips.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="images/14.jpeg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            This website has the best travel recommendations. I've discovered so
+            many amazing destinations thanks to them.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="images/15.jpeg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            The travel tips and guides on this website are invaluable. They've
+            helped me have unforgettable experiences on my trips.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="images/16.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            This website has a great layout and is visually appealing. It makes
+            me excited to plan my next adventure!
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="review-image">
+            <img src="images/17.jpg" alt="" srcset="" />
+          </div>
+          <div class="review-text">
+            The customer service on this website is top-notch. They're always
+            quick to respond and very helpful.
+          </div>
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div id="About-us" class="heading">
+        <a href="#"><span class="text-danger">About-</span>Us</a>
+      </div>
+      <div class="container">
+        <div class="photo">
+          <img src="images/marquam-nature-park.jpg" alt="" srcset="" />
+        </div>
+        <div class="content">
+          <h2>About Us</h2>
+          <p>
+            Our traveling website is a passionate endeavor dedicated to
+            inspiring wanderlust and facilitating unforgettable journeys. We aim
+            to provide insightful travel guides, destination highlights, and
+            curated travel experiences to help you embark on your next adventure
+            with confidence and excitement. Join us in exploring the world's
+            wonders and creating memories that last a lifetime.
+          </p>
+          <p>
+            At our traveling website, we believe in the transformative power of
+            travel. We strive to not only showcase the beauty and diversity of
+            destinations but also to foster a community of like-minded
+            explorers. Whether you're seeking practical travel tips, immersive
+            cultural experiences, or simply a dose of wanderlust, our platform
+            is here to ignite your passion for travel and encourage you to
+            embrace new horizons. Embark on a journey of discovery with us and
+            let your travel dreams take flight.
+          </p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div id="contct-form" class="heading">
+        <a href="#"><span class="text-danger">Contact-</span>Form</a>
+      </div>
+      <div class="contact">
+        <h3>JOIN OUR MAILING LIST</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div id="contact-box">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="name"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number: </label>
+              <input
+                type="phone"
+                name="name"
+                id="phone"
+                placeholder="Enter your phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footercon">
+          <div class="row1">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">about packages</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Payment options</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Locations</h4>
+              <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Engaland</a></li>
+                <li><a href="#">South-koria</a></li>
+                <li><a href="#">America</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Our Sponsers</h4>
+              <div class="sponsers">
+                <a href="#"><img src="images/9.png" alt="" /></a>
+                <a href="#"><img src="images/10.png" alt="" /></a>
+                <a href="#"><img src="images/11.png" alt="" /> </a>
+                <a href="#"><img src="images/12.png" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin b1"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram b1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter b1"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f b1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function search() {
+        var input = document.getElementById("search-input").value.toLowerCase();
+        var locations = [
+          "Varanasi",
+          "Manali",
+          "Ahmedabad",
+          "Jaipur",
+          "Singapore",
+          "Dubai",
+          "Maldives",
+          "Amsterdam",
+        ];
+        var found = false;
+
+        for (var i = 0; i < locations.length; i++) {
+          if (locations[i].toLowerCase() === input) {
+            // Remove the 'selected' class from all locations
+            document
+              .getElementById("locations")
+              .querySelectorAll(".location")
+              .forEach(function (elem) {
+                elem.classList.remove("selected");
+              });
+
+            // Add the 'selected' class to the selected location
+            document.getElementById(locations[i]).classList.add("selected");
+
+            // Add the 'selected' class to the corresponding card
+            document
+              .getElementById(locations[i] + "Card")
+              .classList.add("selected");
+
+            // Set a timeout to scroll to the 'our-packages' section after a short delay
+            setTimeout(function () {
+              document.getElementById("our-packages").scrollIntoView();
+            }, 100);
+
+            // Set a timeout to remove the 'selected' class after 2 seconds
+            setTimeout(function () {
+              document
+                .getElementById(locations[i] + "Card")
+                .classList.remove("selected");
+            }, 2000);
+
+            found = true;
+            break;
+          }
+        }
+
+        if (!found) {
+          alert("Location not found.");
+        }
+      }
+    </script>
+  </body>
+</html>
