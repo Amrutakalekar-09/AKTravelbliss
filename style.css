@@ -92,6 +92,7 @@
 
 .text h2 {
   font-size: 40px;
+  color: #dc3545;
   font-weight: 650;
   margin-bottom: 10px;
   line-height: 2;
@@ -112,16 +113,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-basis: 22%;
-  padding: 50px 10px;
+  flex-basis: 20%;
+  padding: 10px 5px;
   transition: all 0.7s ease 0s;
   cursor: pointer;
 }
 
 .container-image img {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
+  height: 150px;
+  width: 200px;
+  padding: 5px;
   margin-bottom: 15px;
 }
 
@@ -152,7 +153,7 @@
 
 input[type="text"] {
   padding: 8px;
-  width: 200px;
+  width: 400px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -594,7 +595,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin-top: 680px;
+    margin-top: 790px;
 
     place-items: center;
   }
@@ -672,6 +673,9 @@ ul {
   }
 }
 @media only screen and (max-width: 645px) {
+  input[type="text"] {
+   width: 200px;
+  }
   .review {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -765,7 +769,7 @@ ul {
 
     align-items: center;
     justify-content: center;
-    margin-bottom: 1210px;
+    margin-bottom: 1945px;
     margin-top: 900px;
   }
   .box1 {

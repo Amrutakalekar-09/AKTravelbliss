@@ -60,3 +60,19 @@ document.addEventListener("DOMContentLoaded", function() {
      alert("Congratulations! Your booking is confirmed. Enjoy your Vacations!"); 
   });
 });
+// Initialize ScrollReveal
+ScrollReveal().reveal(' .head, .about-desc , .heading , .row1, .box , .row12 , .card, .review-block, .blog1 , .blog2 , .book , .gmap , .footercon', {
+  delay: 300,
+  duration: 5000,
+  origin: 'bottom',
+  reset: false, // Set reset to false to prevent content from disappearing
+  opacity: 0, // Start with opacity 0
+  beforeReveal: function (domEl) {
+    // Add the animate__bounceInUp class to the element
+    domEl.classList.add('animate__animated', 'animate__fadeInUpBig');
+  },
+  afterReveal: function (domEl) {
+    // Remove the animate__bounceInUp class from the element after animation
+    domEl.classList.remove('animate__animated',  'animate__fadeInUpBig');
+  }
+});

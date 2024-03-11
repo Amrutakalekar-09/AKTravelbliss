@@ -84,7 +84,7 @@
         <div class="rowitems">
           <div class="container-box">
             <div class="container-image">
-              <img src="images/1a.jpg" alt="Flight Services" />
+              <img src="images/140.jpg" alt="Flight Services" />
             </div>
             <h4>Flight Services</h4>
             <p>Arrival and Departure</p>
@@ -92,7 +92,7 @@
 
           <div class="container-box">
             <div class="container-image">
-              <img src="images/2a.jpg" alt="Food Services" />
+              <img src="images/141.jpg" alt="Food Services" />
             </div>
             <h4>Food Services</h4>
             <p>Catering</p>
@@ -100,7 +100,7 @@
 
           <div class="container-box">
             <div class="container-image">
-              <img src="images/3a.jpg" alt="Travel Services" />
+              <img src="images/142.jpg" alt="Travel Services" />
             </div>
             <h4>Travel Services</h4>
             <p>Pick-up/drop</p>
@@ -108,7 +108,7 @@
 
           <div class="container-box">
             <div class="container-image">
-              <img src="images/4a.jpg" alt="Hotel Services" />
+              <img src="images/143.png" alt="Hotel Services" />
             </div>
             <h4>Hotel Services</h4>
             <p>Check-in/out</p>
@@ -140,7 +140,8 @@
       <div id="our-packages" class="heading">
         <a href="#"><span class="text-danger">Our-</span> Packages</a>
       </div>
-
+      
+      <div id="packages">
       <div class="box">
         <div class="card" id="VaranasiCard" style="width: 18rem">
           <img src="images/1.jpg" class="card-img-top" alt="..." />
@@ -291,6 +292,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <div id="rev" class="heading">
         <a href="#"><span class="text-danger">Visitor-</span>Reviews</a>
@@ -382,7 +384,7 @@
       </div>
       <div class="container">
         <div class="photo">
-          <img src="images/marquam-nature-park.jpg" alt="" srcset="" />
+          <img src="images/144.jpg" alt="" srcset="" />
         </div>
         <div class="content">
           <h2>About Us</h2>
@@ -550,7 +552,7 @@
 
             // Set a timeout to scroll to the 'our-packages' section after a short delay
             setTimeout(function () {
-              document.getElementById("our-packages").scrollIntoView();
+              document.getElementById("packages").scrollIntoView();
             }, 100);
 
             // Set a timeout to remove the 'selected' class after 2 seconds
@@ -570,5 +572,28 @@
         }
       }
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <script>
+      // Initialize ScrollReveal
+      ScrollReveal().reveal('.wrapper .body, .container-box , .heading , .search-container, .box , .box1 , .card, .review-block, .container , .photo , .content , .contact , .footercon', {
+        delay: 300,
+        duration: 5000,
+        origin: 'bottom',
+        reset: false, // Set reset to false to prevent content from disappearing
+        opacity: 0, // Start with opacity 0
+        beforeReveal: function (domEl) {
+          // Add the animate__bounceInUp class to the element
+          domEl.classList.add('animate__animated', 'animate__fadeInUpBig');
+        },
+        afterReveal: function (domEl) {
+          // Remove the animate__bounceInUp class from the element after animation
+          domEl.classList.remove('animate__animated',  'animate__fadeInUpBig');
+        }
+      });
+    </script>
+    
+    
   </body>
 </html>
