@@ -142,7 +142,7 @@
       </div>
       
       <div id="packages">
-      <div class="box">
+      <div class="box" id="box">
         <div class="card" id="VaranasiCard" style="width: 18rem">
           <img src="images/1.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -217,7 +217,7 @@
           </div>
         </div>
       </div>
-      <div class="box1">
+      <div class="box1" id="box1">
         <div class="card" id="SingaporeCard" style="width: 18rem">
           <img src="images/5.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -519,67 +519,71 @@
 
     <script>
       function search() {
-        var input = document.getElementById("search-input").value.toLowerCase();
-        var locations = [
-          "Varanasi",
-          "Manali",
-          "Ahmedabad",
-          "Jaipur",
-          "Singapore",
-          "Dubai",
-          "Maldives",
-          "Amsterdam",
-        ];
-        var found = false;
+    var input = document.getElementById("search-input").value.toLowerCase();
+    var locations = [
+        "Varanasi",
+        "Manali",
+        "Ahmedabad",
+        "Jaipur",
+        "Singapore",
+        "Dubai",
+        "Maldives",
+        "Amsterdam",
+    ];
+    var found = false;
 
-        for (var i = 0; i < locations.length; i++) {
-          if (locations[i].toLowerCase() === input) {
+    for (var i = 0; i < locations.length; i++) {
+        if (locations[i].toLowerCase() === input) {
             // Remove the 'selected' class from all locations
             document
-              .getElementById("locations")
-              .querySelectorAll(".location")
-              .forEach(function (elem) {
-                elem.classList.remove("selected");
-              });
+                .getElementById("locations")
+                .querySelectorAll(".location")
+                .forEach(function (elem) {
+                    elem.classList.remove("selected");
+                });
 
             // Add the 'selected' class to the selected location
             document.getElementById(locations[i]).classList.add("selected");
 
             // Add the 'selected' class to the corresponding card
             document
-              .getElementById(locations[i] + "Card")
-              .classList.add("selected");
+                .getElementById(locations[i] + "Card")
+                .classList.add("selected");
 
             // Set a timeout to scroll to the 'our-packages' section after a short delay
-            setTimeout(function () {
-              document.getElementById("packages").scrollIntoView();
-            }, 100);
+           // Set a timeout to scroll to the 'our-packages' section after a short delay
+setTimeout(function () {
+    var packagesElement = document.getElementById("packages");
+    packagesElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+}, 1000);
+
 
             // Set a timeout to remove the 'selected' class after 2 seconds
             setTimeout(function () {
-              document
-                .getElementById(locations[i] + "Card")
-                .classList.remove("selected");
-            }, 2000);
+                document
+                    .getElementById(locations[i] + "Card")
+                    .classList.remove("selected");
+            }, 4000);
 
             found = true;
             break;
-          }
         }
+    }
 
-        if (!found) {
-          alert("Location not found.");
-        }
-      }
-    </script>
+    if (!found) {
+        alert("Location not found.");
+    }
+}
+
+      </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
     <script>
       // Initialize ScrollReveal
-      ScrollReveal().reveal('.wrapper .body, .container-box , .heading , .search-container, .box , .box1 , .card, .review-block, .container , .photo , .content , .contact , .footercon', {
+      ScrollReveal().reveal('.wrapper .body, .container-box , .heading , .search-container , .card, .review-block, .container , .photo , .content , .contact , .footercon', {
         delay: 300,
-        duration: 5000,
+        duration: 1000,
         origin: 'bottom',
         reset: false, // Set reset to false to prevent content from disappearing
         opacity: 0, // Start with opacity 0

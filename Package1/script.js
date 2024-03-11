@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 // Initialize ScrollReveal
-ScrollReveal().reveal(' .head, .about-desc , .heading , .row1, .box , .row12 , .card, .review-block, .blog1 , .blog2 , .book , .gmap , .footercon', {
+ScrollReveal().reveal(' .head, .about-desc , .heading , .row1 , .row2 , .card, .review-block, .blog1 , .blog2 , .book , .gmap , .footercon', {
   delay: 300,
   duration: 5000,
   origin: 'bottom',
